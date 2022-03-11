@@ -1,0 +1,18 @@
+[features]
+seeds = false
+[programs.localnet]
+mpl_testing = "5edrrYVdopsZAywpM65QfTDcSy9UKRJDV7Xg3iDSJyjc"
+
+[[test.genesis]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+program = "/Users/pratiksaria/developement/MyBlockChain/solana_files/working_projects/mpl-testing/mpl_token_metadata.so"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/pratiksaria/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
